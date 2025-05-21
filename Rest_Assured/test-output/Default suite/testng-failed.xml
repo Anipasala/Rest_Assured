@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day7.authorization">
+      <class name="Day2.DifferentMethodsOfCreatingUsers">
         <methods>
-          <include name="auth2Authecation"/>
-          <include name="bearerTokenAuthecation"/>
+          <include name="usingJSonOBject"/>
         </methods>
-      </class> <!-- Day7.authorization -->
+      </class> <!-- Day2.DifferentMethodsOfCreatingUsers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

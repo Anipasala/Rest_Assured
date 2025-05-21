@@ -1,63 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T17:37:23 IST" name="Suite" finished-at="2025-05-01T17:37:30 IST" duration-ms="6825">
+  <suite started-at="2025-05-09T20:01:34 IST" name="Default suite" finished-at="2025-05-09T20:01:39 IST" duration-ms="4457">
     <groups>
     </groups>
-    <test started-at="2025-05-01T17:37:23 IST" name="Test" finished-at="2025-05-01T17:37:30 IST" duration-ms="6825">
-      <class name="Day8.updateUser">
-        <test-method signature="test_updateUser(org.testng.ITestContext)[pri:0, instance:Day8.updateUser@4218d6a3]" started-at="2025-05-01T17:37:29 IST" name="test_updateUser" finished-at="2025-05-01T17:37:29 IST" duration-ms="421" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a6afff2]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-05-09T20:01:34 IST" name="Default test" finished-at="2025-05-09T20:01:39 IST" duration-ms="4457">
+      <class name="Day2.DifferentMethodsOfCreatingUsers">
+        <test-method signature="usingExternalFiles()[pri:0, instance:Day2.DifferentMethodsOfCreatingUsers@692f203f]" started-at="2025-05-09T20:01:34 IST" name="usingExternalFiles" finished-at="2025-05-09T20:01:38 IST" duration-ms="3933" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_updateUser -->
-      </class> <!-- Day8.updateUser -->
-      <class name="Day8.createUser">
-        <test-method signature="testCreatingAUser(org.testng.ITestContext)[pri:0, instance:Day8.createUser@7b2bbc3]" started-at="2025-05-01T17:37:23 IST" name="testCreatingAUser" finished-at="2025-05-01T17:37:28 IST" duration-ms="5609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a6afff2]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- usingExternalFiles -->
+        <test-method signature="usingJSonOBject()[pri:0, instance:Day2.DifferentMethodsOfCreatingUsers@692f203f]" started-at="2025-05-09T20:01:38 IST" name="usingJSonOBject" finished-at="2025-05-09T20:01:39 IST" duration-ms="460" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path id doesn't match.
+Expected: <558>
+  Actual: 81
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path id doesn't match.
+Expected: <558>
+  Actual: 81
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at Day2.DifferentMethodsOfCreatingUsers.usingJSonOBject(DifferentMethodsOfCreatingUsers.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreatingAUser -->
-      </class> <!-- Day8.createUser -->
-      <class name="Day8.deleteUser">
-        <test-method signature="test_deleteUser(org.testng.ITestContext)[pri:0, instance:Day8.deleteUser@76505305]" started-at="2025-05-01T17:37:29 IST" name="test_deleteUser" finished-at="2025-05-01T17:37:30 IST" duration-ms="294" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a6afff2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_deleteUser -->
-      </class> <!-- Day8.deleteUser -->
-      <class name="Day8.getUser">
-        <test-method signature="testGetUser(org.testng.ITestContext)[pri:0, instance:Day8.getUser@5656be13]" started-at="2025-05-01T17:37:28 IST" name="testGetUser" finished-at="2025-05-01T17:37:29 IST" duration-ms="409" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6a6afff2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUser -->
-      </class> <!-- Day8.getUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- usingJSonOBject -->
+      </class> <!-- Day2.DifferentMethodsOfCreatingUsers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

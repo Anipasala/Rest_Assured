@@ -37,7 +37,7 @@ public class JSONParsing {
 		
 		}
 		
-		Assert.assertEquals(status, true);
+	   Assert.assertEquals(status, true);
 		
        String email=res.jsonPath().get("data[2].email").toString();
        

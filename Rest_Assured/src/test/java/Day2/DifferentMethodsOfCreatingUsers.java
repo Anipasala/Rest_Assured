@@ -97,14 +97,14 @@ public class DifferentMethodsOfCreatingUsers {
 
 	}
 	
-	//@Test
+	@Test
 	void usingExternalFiles() throws FileNotFoundException {
 
 		File f= new File(".\\externalFileToPractice.json");
 		FileReader fr= new FileReader(f);
 		JSONTokener jt= new JSONTokener(fr);
 		
-		JSONObject data= new JSONObject();
+		JSONObject data= new JSONObject(jt);
 		
 		
 

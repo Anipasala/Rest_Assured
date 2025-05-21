@@ -88,7 +88,7 @@ public class httpsRequest {
 		.body(data)
 		
 		.when()
-		.post("https://reqres.in/api/users" +id)
+		.put("https://reqres.in/api/users" +id)
 		
 		.then()
 		
