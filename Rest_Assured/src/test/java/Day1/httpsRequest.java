@@ -5,6 +5,7 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.testng.annotations.Test;
 
@@ -31,7 +32,7 @@ public class httpsRequest {
 	//@Test
 	void createUser() {
 
-		HashMap<String,String> data= new HashMap<>();
+		Map<String,String> data= new HashMap<>();
 
 		data.put("name","morpheus");
 		data.put("job","leader");
